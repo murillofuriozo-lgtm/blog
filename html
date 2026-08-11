@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web - Interfaces Digitais</title>
+    <style>
+        /* Reset e Configurações Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho Hero */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1100px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #1e3c72;
+        }
+
+        /* Grid de Cards (Interface Responsiva) */
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 1.8rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-top: 4px solid #2a5298;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: #1e3c72;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #555555;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            background-color: #111827;
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho da Interface -->
+    <header>
+        <h1>Página Web & Interfaces Digitais</h1>
+        <p>Projeto estruturado para aplicação de conceitos de UX/UI, responsividade e HTML5 semântico.</p>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <h2 class="section-title">Pilares do Desenvolvimento Web</h2>
+        
+        <div class="grid-cards">
+            <article class="card">
+                <h3>1. HTML5 Semântico</h3>
+                <p>Uso apropriado de tags como <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code> e <code>&lt;footer&gt;</code> para melhorar a acessibilidade e o SEO.</p>
+            </article>
+
+            <article class="card">
+                <h3>2. Design Responsivo</h3>
+                <p>Layout adaptável com CSS Grid e Flexbox, garantindo boa visualização em dispositivos móveis, tablets e computadores.</p>
+            </article>
+
+            <article class="card">
+                <h3>3. Experiência do Usuário (UX/UI)</h3>
+                <p>Foco na usabilidade, escolha de fontes legíveis, contraste adequado de cores e componentes visuais intuitivos.</p>
+            </article>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Interfaces Digitais — Desenvolvimento Web</p>
+    </footer>
+
+</body>
+</html>
